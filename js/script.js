@@ -2,6 +2,7 @@ console.log("Digital Clock USing JS");
 
 let timenow, hour, min, sec, session;
 let count = 0;
+document.getElementById("clock").style.display = "block";
 
 function time(){
     timenow = new Date();
