@@ -1,5 +1,6 @@
 /* font-family: 'Changa', sans-serif;
-font-family: 'Orbitron', sans-serif; */
+font-family: 'Orbitron', sans-serif;
+font-family: 'Bruno Ace SC', cursive; */
 
 section.banner {
     background: black;
@@ -25,7 +26,19 @@ section.banner {
     /* background: blueviolet; */
     border: 16px double blueviolet;
 }
-
+#text{
+    animation: fadeIn 5s; 
+    color: #efefef;
+    font-size: 7vw;
+    text-align: center;
+    font-family: 'Bruno Ace SC', cursive;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  
 #clock{
     font-family: 'Orbitron', sans-serif;
     /* font-family: 'Changa', sans-serif; */
