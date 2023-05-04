@@ -2,7 +2,7 @@ console.log("Digital Clock USing JS");
 
 let timenow, hour, min, sec, session;
 let count = 0;
-document.getElementById("clock").style.display = "block";
+
 
 function time(){
     timenow = new Date();
@@ -29,5 +29,17 @@ function time(){
 
     document.getElementById("clock").innerHTML = `${hour} : ${min} : ${sec}  ${session}` ;
 }
+setTimeout( ()=>{
+    document.getElementById("text").style.animation = "fadeOut 5s";
+    // document.getElementById("text").style.opacity = "0";
+    document.getElementById("text").style.display = "block";
+    // document.getElementById("clock").style.animation = "fadeIn 5s";
+},7000);
+setTimeout( ()=>{
+    // document.getElementById("clock").style.display = "block";
+    // document.getElementById("text").style.animation = "fadeOut";
+    document.getElementById("clock").style.animation = "fadeIn 5s";
+},7000);
+
 
 setInterval(time,1000);

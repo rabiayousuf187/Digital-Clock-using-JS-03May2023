@@ -32,18 +32,34 @@ section.banner {
     font-size: 7vw;
     text-align: center;
     font-family: 'Bruno Ace SC', cursive;
+    /* opacity: 0; */
 }
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
-  }
+}
+
+.fadeOut{
+    animation: fadeOut 5s; 
+    /* display: none; */
+    color: #efefef;
+    font-size: 7vw;
+    text-align: center;
+    font-family: 'Bruno Ace SC', cursive;
+    
+}
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
   
   
 #clock{
+    animation: fadeIn 5s; 
     font-family: 'Orbitron', sans-serif;
     /* font-family: 'Changa', sans-serif; */
     color: #efefef;
     font-size: 10vw;
     font-weight: bold;
-    display: none;
+    /* display: none; */
 }
