@@ -13,10 +13,9 @@ function time(){
     
     console.log("count === ",count);
     console.log("timenow === ",timenow);
-    console.log("hour === ",hour);
-    console.log("min === ",min);
-    console.log("sec === ",sec);
+    console.log("show time === ",hour, min , sec);
+    
+    document.getElementById("clock").innerHTML = `${hour} : ${min} : ${sec}`;
 }
 
-document.read
-setInterval( time() , 5000 );
+setInterval(time,1000);
