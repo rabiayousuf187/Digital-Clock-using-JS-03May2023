@@ -24,7 +24,16 @@ section.banner {
     /* height: 70%; */
     width: 90%;
     /* background: blueviolet; */
-    border: 16px double blueviolet;
+    border: 12px double blueviolet;
+}
+#clock{
+    /* animation: fadeIn 5s;  */
+    font-family: 'Orbitron', sans-serif;
+    /* font-family: 'Changa', sans-serif; */
+    color: #efefef;
+    font-size: 9.5vw;
+    font-weight: bold;
+    display: none;
 }
 .anim_fadeIn{
     animation: fadeIn 5s; 
@@ -55,12 +64,3 @@ section.banner {
 }
   
   
-#clock{
-    /* animation: fadeIn 5s;  */
-    font-family: 'Orbitron', sans-serif;
-    /* font-family: 'Changa', sans-serif; */
-    color: #efefef;
-    font-size: 10vw;
-    font-weight: bold;
-    /* display: none; */
-}
