@@ -3,6 +3,7 @@ console.log("Digital Clock USing JS");
 let timenow, hour, min, sec, session;
 let count = 0;
 
+document.getElementById("clock").style.display = "none";
 
 function time(){
     timenow = new Date();
@@ -30,15 +31,18 @@ function time(){
     document.getElementById("clock").innerHTML = `${hour} : ${min} : ${sec}  ${session}` ;
 }
 setTimeout( ()=>{
-    document.getElementById("text").style.animation = "fadeOut 5s";
+    console.log("fade out");
+    document.getElementById("text").classList.remove("anim_fadeIn");
+    document.getElementById("text").classList.add("anim_fadeOut");
+    // document.getElementById("text").style.animation = "anim_fadeOut 5s";
     // document.getElementById("text").style.opacity = "0";
-    document.getElementById("text").style.display = "block";
     // document.getElementById("clock").style.animation = "fadeIn 5s";
-},7000);
+},3000);
 setTimeout( ()=>{
+    document.getElementById("text").style.display = "none";
     // document.getElementById("clock").style.display = "block";
-    // document.getElementById("text").style.animation = "fadeOut";
-    document.getElementById("clock").style.animation = "fadeIn 5s";
+    document.getElementById("clock").classList.add = "anim_fadeIn";
+    // document.getElementById("text").style.animation = "anim_fadeIn 5s";
 },7000);
 
 

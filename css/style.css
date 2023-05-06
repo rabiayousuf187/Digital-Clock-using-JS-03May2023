@@ -26,7 +26,7 @@ section.banner {
     /* background: blueviolet; */
     border: 16px double blueviolet;
 }
-#text{
+.anim_fadeIn{
     animation: fadeIn 5s; 
     color: #efefef;
     font-size: 7vw;
@@ -39,7 +39,7 @@ section.banner {
     100% { opacity: 1; }
 }
 
-.fadeOut{
+.anim_fadeOut{
     animation: fadeOut 5s; 
     /* display: none; */
     color: #efefef;
@@ -49,14 +49,14 @@ section.banner {
     
 }
 @keyframes fadeOut {
-    0% { opacity: 0; }
+    0% { opacity: 1; }
     /* 50% { opacity: 1; } */
     100% { opacity: 0; }
 }
   
   
 #clock{
-    animation: fadeIn 5s; 
+    /* animation: fadeIn 5s;  */
     font-family: 'Orbitron', sans-serif;
     /* font-family: 'Changa', sans-serif; */
     color: #efefef;
